@@ -1,34 +1,45 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { ThemeProvider, createTheme } from "@mui/material";
+// import { useSelector } from "react-redux";
 import viteLogo from '/vite.svg'
+// import styled from "@emotion/styled";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const AttryValueTypo = styled(Typography)({
+  //   color: "GrayText",
+  //   textAlign: "center",
+  //   marginTop: 5,
+  // });
+  // const [mode, setMode] = useState("light");
+
+  // import { useSelector } from "react-redux";
+
+  //  const darkTheme = createTheme({
+  //   palette:{
+  //     mode:mode,
+  // primary: {
+  //       main: "#fcecec",
+  //     },
+  //     iconColor: {
+  //       main: "#d43c5c",
+  //     },
+  //   },
+
+  //  })
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
+    // <ThemeProvider theme={darkTheme}>
+    // <BrowserRouter>
+    //     <Routes>
+    //       <Route path="/" element={<LandingPage />} />
+    //     </Routes>
+    //   </BrowserRouter>
+    // {/* </ThemeProvider> */}
   )
 }
 
